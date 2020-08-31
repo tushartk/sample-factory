@@ -18,4 +18,4 @@ _experiment = Experiment(
     _params.generate_params(randomize=False),
 )
 
-RUN_DESCRIPTION = RunDescription('quads_multi_v105_4seeds', experiments=[_experiment])
+RUN_DESCRIPTION = RunDescription('quads_multi_v105_3seeds_circ', experiments=[_experiment])
