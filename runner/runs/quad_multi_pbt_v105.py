@@ -14,7 +14,7 @@ _experiment = Experiment(
     '--pbt_start_mutation=20000000 --with_pbt=True --adam_eps=1e-8 --nonlinearity=tanh '
     '--actor_critic_share_weights=False --policy_initialization=xavier_uniform --adaptive_stddev=False '
     '--hidden_size=64 --with_vtrace=False --max_policy_lag=100000000 --gae_lambda=1.00 --max_grad_norm=0.0 '
-    '--ppo_clip_value=5.0',
+    '--ppo_clip_value=5.0 --quads_episode_duration=8 --quads_num_agents=5',
     _params.generate_params(randomize=False),
 )
 
