@@ -1,11 +1,11 @@
 from runner.run_description import RunDescription, Experiment, ParamGrid
 
 _params = ParamGrid([
-    ('seed', [1111, 2222, 3333, 4444]),
+    ('seed', [1111, 2222, 3333, 4444, 5555, 6666, 7777, 8888]),
     ('quads_num_agents', [6]),
     ('quads_settle_reward', [1.0]),
     ('quads_episode_duration', [14.0]),
-    ('quads_collision_reward', [1.0]),
+    ('quads_collision_reward', [0.5]),
     ('quads_mode', ['circular_config']),
 ])
 
@@ -15,4 +15,4 @@ _experiment = Experiment(
     _params.generate_params(randomize=False),
 )
 
-RUN_DESCRIPTION = RunDescription('tt_quads_multi_circular_config_collision_gridsearch_v107', experiments=[_experiment])
+RUN_DESCRIPTION = RunDescription('col_rew_half_8_seeds', experiments=[_experiment])
