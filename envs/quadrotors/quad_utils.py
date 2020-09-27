@@ -29,6 +29,7 @@ def make_quadrotor_env_single(cfg, **kwargs):
         dynamics_params=quad, raw_control=raw_control, raw_control_zero_middle=raw_control_zero_middle,
         dynamics_randomize_every=dyn_randomize_every, dynamics_change=dynamics_change, dyn_sampler_1=sampler_1,
         sense_noise=sense_noise, init_random_state=True, ep_time=episode_duration, rew_coeff=rew_coeff,
+        use_numba=cfg.quads_suse_numba
     )
 
     if cfg.quads_discretize_actions > 0:
