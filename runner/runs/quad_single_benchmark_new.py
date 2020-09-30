@@ -6,7 +6,7 @@ _params = ParamGrid([
     ('ppo_epochs', [1]),
     ('nonlinearity', ['tanh']),
     ('learning_rate', [1e-4]),
-    ('entropy_loss_coeff', [0.0]),
+    ('exploration_loss_coeff', [0.0]),
     ('initial_stddev', [1.0]),
     ('hidden_size', [64]),
     ('adam_eps', [1e-8]),

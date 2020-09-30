@@ -26,7 +26,7 @@ RUN_DESCRIPTION = RunDescription('quads_multi_benchmark_4seeds_72_4', experiment
 # export USE_SIMPLE_THREADED_LEVEL3=1
 
 # Command to use this script on server:
-# xvfb-run python -m runner.run --run=quad_multi_benchmark --runner=processes --max_parallel=8 --pause_between=1 --experiments_per_gpu=2 --num_gpus=4
+# xvfb-run python -m runner.run --run=quad_multi_benchmark_4seeds --runner=processes --max_parallel=8 --pause_between=1 --experiments_per_gpu=2 --num_gpus=4
 # Command to use this script on local machine:
 # Please change num_workers to the physical cores of your local machine
 # python -m runner.run --run=quad_multi_benchmark --runner=processes --max_parallel=8 --pause_between=1 --experiments_per_gpu=2 --num_gpus=4
