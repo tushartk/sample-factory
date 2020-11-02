@@ -2,7 +2,7 @@ from runner.run_description import RunDescription, Experiment, ParamGrid
 
 _params = ParamGrid([
     ('seed', [0000, 1111, 2222, 3333]),
-    ('quads_num_agents', [6]),
+    ('quads_num_agents', [8]),
     ('quads_episode_duration', [15.0]),
     ('quads_mode', ['same_goal']),
     ('quads_dist_between_goals', [0.0]),
