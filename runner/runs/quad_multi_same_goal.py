@@ -6,7 +6,7 @@ _params = ParamGrid([
     ('quads_episode_duration', [15.0]),
     ('quads_mode', ['same_goal']),
     ('quads_dist_between_goals', [0.0]),
-    ('quads_collision_reward', [0.1]),
+    ('quads_collision_reward', [0.5]),
     ('encoder_custom', ['quad_multi_encoder_deepset']),
 ])
 
